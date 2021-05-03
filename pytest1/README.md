@@ -2,7 +2,7 @@
 
         docker build -t <pytest> .
 
-# To run the docker image:
+# To run the Docker image:
 
         docker run <pytest>
 
@@ -12,7 +12,7 @@
 
         docker rm <container_id>
 
-# To delete the docker image:
+# To delete the Docker image:
 
         docker images
 
