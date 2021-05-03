@@ -35,9 +35,9 @@ To delete ***all*** your containers, run:
 
         docker ps -q -a | xargs docker rm
 
-    * -q prints only the container id
-    * -a prints all containers
-    * passing all container IDs to xargs, docker rm deletes all containers
+* **-q** prints only the container id
+* **-a** prints all containers
+* passing all container IDs to xargs, docker rm deletes all containers
 
 # Deleting Docker images
 
