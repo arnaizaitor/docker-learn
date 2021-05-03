@@ -1,2 +1,2 @@
 # docker-learn
-Docker practise
+Docker practice
