@@ -1,10 +1,10 @@
 # To build the Docker image:
 
-        docker build -t <pytest> .
+        docker build -t <image_tag> .
 
 # To run the Docker image:
 
-        docker run <pytest>
+        docker run <image_tag>
 
 # To delete the Docker container:
 
