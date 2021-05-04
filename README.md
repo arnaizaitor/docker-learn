@@ -45,7 +45,7 @@ To delete ***all*** your containers, run:
 
 ## Delete a single image
 
-1. Retrieve the Image ID using docker images (The <Image_ID> should be in the third column.)
+1. Retrieve the Image ID using docker images (The <image_id> should be in the third column.)
 
 2. Run docker rmi <image_id>
 
