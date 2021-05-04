@@ -61,3 +61,18 @@ To delete ***all*** of your images, you can simplify the command above:
 
         docker rmi $(docker images | awk '{print $3}')
 	
+# Docker images vs Docker containers
+
+## What is a Docker image?
+
+A Docker image is a read-only, inert template that comes with instructions for deploying containers. In Docker, everything basically revolves around images.
+
+An image consists of a collection of files (or layers) that pack together all the necessities—such as dependencies, source code, and libraries—needed to set up a completely functional container environment.
+
+A Docker image is made up of multiple layers. The image layers are stacked to one another. Although the layers may be different from each other, every one of them may depend on the one immediately below it. 
+
+These layers, also called intermediate images, are essentially read-only files that a container layer will be added on top of them after setting up a virtualized environment. 
+
+You can use the ```docker images``` command to view an image’s details on your system.
+
+Furthermore, you can also use the ```docker history <image_tag>``` command to see all the layers that make up the downloaded image.
