@@ -1,4 +1,4 @@
-![alt text](https://hackernoon.com/hn-images/1*cQmd2JsuqNwNelHh6bU-JA.jpeg)
+![docker](https://user-images.githubusercontent.com/38442315/117026161-d7124680-acfb-11eb-8bdb-f2aadd412052.jpg)
 
 # To build a Docker image
 
@@ -60,3 +60,4 @@ This requires a little bit of Linux magic (like deleting all containers above). 
 To delete ***all*** of your images, you can simplify the command above:
 
         docker rmi $(docker images | awk '{print $3}')
+	
