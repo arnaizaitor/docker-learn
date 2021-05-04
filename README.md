@@ -61,10 +61,10 @@ To delete ***all*** of your images, you can simplify the command above:
 
         docker rmi $(docker images | awk '{print $3}')
 	
-
-![container](https://user-images.githubusercontent.com/38442315/117031311-bb5d6f00-ad00-11eb-8b4b-a30dce0ac7f0.jpg)
 	
 # [Docker images vs Docker containers](https://www.whitesourcesoftware.com/free-developer-tools/blog/docker-images-vs-docker-containers/)
+
+![container](https://user-images.githubusercontent.com/38442315/117031311-bb5d6f00-ad00-11eb-8b4b-a30dce0ac7f0.jpg)
 
 ## What is a Docker image?
 
