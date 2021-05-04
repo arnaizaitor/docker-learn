@@ -76,3 +76,20 @@ These layers, also called intermediate images, are essentially read-only files t
 You can use the ```docker images``` command to view an image’s details on your system.
 
 Furthermore, you can also use the ```docker history <image_tag>``` command to see all the layers that make up the downloaded image.
+
+## What is a Docker container?
+
+A Docker container is a virtualized runtime environment that provides isolation capabilities for separating the execution of applications from the underpinning system. It’s an instance of a Docker image.
+
+Containers are the ultimate utility of the Docker technology—they provide a portable and lightweight environment for deploying applications.
+
+Each container is autonomous and runs in its own isolated environment, ensuring it does not disrupt other running applications or its underlying system. This greatly improves the security of applications.
+
+Docker defines several container states, such as created, restarting, running, paused, exited, and dead. Since several states are possible, and a container is just an instance of the image, a container does not need to be running.
+
+Then, to view its details on your system, you can use either the ```docker ps``` command (outputs only running containers) or ```docker ps -a``` command (outputs both running and stopped containers). 
+
+Every time Docker creates a container from an image, it places a thin read-write layer on top of the image. This writable layer allows for changes to be made to the container, as the lower layers in the image are unchangeable. It also stores any changes made to the container during its entire runtime.
+
+![container](https://user-images.githubusercontent.com/38442315/117031311-bb5d6f00-ad00-11eb-8b4b-a30dce0ac7f0.jpg)
+
