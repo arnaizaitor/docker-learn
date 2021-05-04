@@ -29,7 +29,7 @@
 ## Deleting ***a single*** containter
 
 1. Run ```docker ps -a``` and retrieve the <container_ID>. 
-2. Run ```docker rm <container_ID> to remove ***just*** that container.
+2. Run ```docker rm <container_ID>``` to remove ***just*** that container.
 
 ## Deleting ***all*** your containers:
 
