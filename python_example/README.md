@@ -1,4 +1,3 @@
-![imageonline-co-transparentimage](https://user-images.githubusercontent.com/38442315/117028173-bd71fe80-acfd-11eb-818e-b231f11db3fc.png)
 ![python-docker](https://user-images.githubusercontent.com/38442315/117027533-155c3580-acfd-11eb-875f-aeb02da0eba5.png)
 
 # Generic python project Dockerfile
