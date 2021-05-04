@@ -66,7 +66,7 @@ To delete ***all*** of your images, you can simplify the command above:
 
 ![container](https://user-images.githubusercontent.com/38442315/117031311-bb5d6f00-ad00-11eb-8b4b-a30dce0ac7f0.jpg)
 
-## What is a Docker image?
+## What is a Docker Image?
 
 A Docker image is a read-only, inert template that comes with instructions for deploying containers. In Docker, everything basically revolves around images.
 
@@ -80,7 +80,7 @@ You can use the ```docker images``` command to view an image’s details on your
 
 Furthermore, you can also use the ```docker history <image_tag>``` command to see all the layers that make up the downloaded image.
 
-## What is a Docker container?
+## What is a Docker Container?
 
 A Docker container is a virtualized runtime environment that provides isolation capabilities for separating the execution of applications from the underpinning system. It’s an instance of a Docker image.
 
@@ -94,4 +94,33 @@ Then, to view its details on your system, you can use either the ```docker ps```
 
 Every time Docker creates a container from an image, it places a thin read-write layer on top of the image. This writable layer allows for changes to be made to the container, as the lower layers in the image are unchangeable. It also stores any changes made to the container during its entire runtime.
 
+If you want to keep the changes made to the initial image for future use, you can take a screenshot to save the current state of the container. This will add a container layer atop the image, eventually creating a new immutable image. 
 
+Furthermore, it’s possible to launch multiple container instances simultaneously from the same image. Every container layer will maintain its own individual state safely atop the underlying image. The containers will have different IDs, but arise from the same image.
+
+Creating multiple containers from the same image can be very beneficial. For example, it increases the availability of an application—in case one container fails, the others will ensure the application is still up and running. Duplicate containers also help in scaling up an application in case demand surges upwards.
+
+## What is the difference between Docker Images and Docker Containers?
+
+Docker images and containers work together to let you unleash the full potential of the innovative Docker technology. However, they have subtle differences that may be difficult to notice, especially for a beginner.
+
+A simple analogy that compares their differences is to think of a Docker image as a recipe and a container as the cake prepared from that recipe.
+
+The recipe sets out the instructions for baking the cake. You cannot enjoy eating the cake if you do not put the instructions into action. 
+
+You need to follow the recipe to prepare the cake and eat it. Similarly, you should follow the instructions in the Docker image to create and start a container, and enjoy the benefits of Docker.
+
+You can bake as many cakes as possible from a single recipe—just like an image can create multiple containers. However, if you change the recipe, the taste of your existing cakes will not change. 
+
+Only newly baked cakes will use the modified recipe. Likewise, if you make changes to a container image, you’ll not affect the already running containers.
+
+Here is a table that points out the differences between Docker images and containers:
+
+|                      **Docker Image**                      |                             **Docker Container**                            |
+|:----------------------------------------------------------:|:---------------------------------------------------------------------------:|
+| It's a container blueprint                                 | It's an image instance                                                      |
+| It's immutable                                             | It's writable                                                               |
+| It can exist without a container                           | A container must run an image to exist                                      |
+| Does not need computing resources to operate               | Needs computing resources to run -containers run as Docker virtual machines |
+| It can be shared via a public or private registry platform | No need to share an already running entity                                  |
+| Created only once                                          | Multiple containers can be created from the same image                      |
