@@ -61,6 +61,9 @@ To delete ***all*** of your images, you can simplify the command above:
 
         docker rmi $(docker images | awk '{print $3}')
 	
+
+![container](https://user-images.githubusercontent.com/38442315/117031311-bb5d6f00-ad00-11eb-8b4b-a30dce0ac7f0.jpg)
+	
 # [Docker images vs Docker containers](https://www.whitesourcesoftware.com/free-developer-tools/blog/docker-images-vs-docker-containers/)
 
 ## What is a Docker image?
@@ -91,5 +94,4 @@ Then, to view its details on your system, you can use either the ```docker ps```
 
 Every time Docker creates a container from an image, it places a thin read-write layer on top of the image. This writable layer allows for changes to be made to the container, as the lower layers in the image are unchangeable. It also stores any changes made to the container during its entire runtime.
 
-![container](https://user-images.githubusercontent.com/38442315/117031311-bb5d6f00-ad00-11eb-8b4b-a30dce0ac7f0.jpg)
 
