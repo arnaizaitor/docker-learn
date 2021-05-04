@@ -1,3 +1,5 @@
+<div style="text-align:center"><img src="https://hackernoon.com/hn-images/1*cQmd2JsuqNwNelHh6bU-JA.jpeg" /></div>
+
 ![alt text](https://hackernoon.com/hn-images/1*cQmd2JsuqNwNelHh6bU-JA.jpeg)
 
 # To build a Docker image
