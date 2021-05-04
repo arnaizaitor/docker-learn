@@ -28,8 +28,8 @@
 
 ## Deleting ***a single*** containter
 
-1. Run **docker ps -a** and retrieve the <container_ID>. 
-2. Run **docker rm <container_ID>** to remove ***just*** that container.
+1. Run ```docker ps -a``` and retrieve the <container_ID>. 
+2. Run ```docker rm <container_ID> to remove ***just*** that container.
 
 ## Deleting ***all*** your containers:
 
@@ -37,17 +37,17 @@ To delete ***all*** your containers, run:
 
         docker ps -q -a | xargs docker rm
 
-* **-q** prints only the container id
-* **-a** prints all containers
+* ```-q``` prints only the container id
+* ```-a``` prints all containers
 * passing all container IDs to xargs, docker rm deletes all containers
 
 # Deleting Docker images
 
 ## Delete a single image
 
-1. Retrieve the Image ID using docker images (The <image_id> should be in the third column.)
+1. Retrieve the Image ID using ```docker images``` (The <image_id> should be in the third column.)
 
-2. Run docker rmi <image_id>
+2. Run ```docker rmi <image_id>```
 
 ## Delete All Untagged Images
 
