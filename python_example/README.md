@@ -1,4 +1,4 @@
-![pydocker](https://user-images.githubusercontent.com/38442315/117027149-b696bc00-acfc-11eb-8f1d-2b3e9d525933.png)
+![python-docker](https://user-images.githubusercontent.com/38442315/117027533-155c3580-acfd-11eb-875f-aeb02da0eba5.png)
 
 # Generic python project Dockerfile
 
