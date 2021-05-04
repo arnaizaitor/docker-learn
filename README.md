@@ -116,7 +116,7 @@ Only newly baked cakes will use the modified recipe. Likewise, if you make chang
 
 Here is a table that points out the differences between Docker images and containers:
 
-|                      *****Docker Image*****                     |                             *****Docker Container*****                            |
+|                      *****```Docker Image```*****                     |                             *****```Docker Container```*****                            |
 |:----------------------------------------------------------:|:---------------------------------------------------------------------------:|
 | It's a container blueprint                                 | It's an image instance                                                      |
 | It's immutable                                             | It's writable                                                               |
